@@ -50,8 +50,15 @@ function addKeyToString(key){
         secondNum = "";
     }else if(firstNum && !secondNum &&
     (key.id === "div" || key.id === "mult" || 
-    key.id === "min" || key.id === "plus")){
-        operation = key.innerHTML;
+    key.id === "min" || key.id === "plus" || 
+    key.id === "sqrt" || key.id === "sqrd")){
+        if(key.id === "sqrt"){
+            firstNum = Math.sqrt(firstNum);
+        }else if(key.id === "sqrd"){
+            firstNum = firstNum ** 2;
+        }else{
+            operation = key.innerHTML;
+        }
     }else if(firstNum && operation && (!isNaN(key.innerHTML) || (key.innerHTML === "." && !(secondNum.includes("."))))){
         secondNum += key.innerHTML;
     }else if(firstNum && operation && secondNum && 
