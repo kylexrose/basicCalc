@@ -18,6 +18,10 @@ body {
     margin: 25px 15px;
 }
 
+#screen p {
+    color: white;
+}
+
 #buttonDiv {
     margin: 10 35px;
     display: flex;
