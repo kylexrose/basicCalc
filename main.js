@@ -30,3 +30,5 @@ function darkModeOn(){
     document.querySelector("#screen").style.backgroundColor = "black";
     document.querySelector("#screen p").style.color = "white";
 }
+
+change
