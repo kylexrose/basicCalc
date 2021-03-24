@@ -1,4 +1,6 @@
-
+body {
+    user-select: none;
+}
 
 #background{
     background-color: gray;
@@ -27,14 +29,23 @@ label {
 #screen {
     background-color: whitesmoke;
     height: 125px;
-    margin: 25px 15px;
+    width: 320px;
+    margin: 15px 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
 }
 
 #screen p {
     color: black;
     font-family: 'Orbitron', sans-serif;
     float: right;
-    margin-right: 25px;
+    text-align: right;
+    margin: 15px 15px;
+    width: 295px;
+    overflow-wrap: break-word;
 }
 
 #buttonDiv {
@@ -63,6 +74,16 @@ label {
     justify-content: center;
     font-family: sans-serif;
     font-weight: bold;
+    border: 1px black outset;
+    box-shadow: 0px 0px 10px black;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button:active{
+    border: .5px inset lightgrey;
 }
 
 #plus {
